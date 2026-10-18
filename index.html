@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Plentium</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plentium - Pi Network</title>
+<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#7c3aed,#ec4899);min-height:100vh;color:white}
+.container{max-width:900px;margin:0 auto;padding:20px}
+.header{text-align:center;padding:40px 20px}
+.header h1{font-size:48px}
+.card{background:white;color:#333;border-radius:20px;padding:30px;margin:20px 0}
+.btn{background:linear-gradient(135deg,#7c3aed,#ec4899);color:white;border:none;padding:15px 30px;border-radius:30px;font-size:18px;font-weight:bold;cursor:pointer;width:100%;margin:10px 0}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.feature{background:#f8f7ff;padding:20px;border-radius:15px;text-align:center}
+.feature h3{color:#7c3aed}
+.status{background:#f0fdf4;padding:15px;border-radius:10px;color:#166534;text-align:center;margin:15px 0}
+</style>
 </head>
 <body>
-<h1>Welcome to Plentium</h1>
-<p>Your Pi App is Live!</p>
+<div class="container">
+<div class="header">
+<h1>💎 Plentium</h1>
+<p>The Future of Pi Network Ecosystem</p>
+</div>
+<div class="card">
+<div class="status">✅ Live at mr786110.github.io - Pi SDK Ready</div>
+<h2>Welcome to Plentium!</h2>
+<p style="margin:15px 0;line-height:1.6">Revolutionary platform built for Pi Network community. Trade, earn, grow with Pi.</p>
+<button class="btn" onclick="alert('Pi SDK Ready! Open in Pi Browser to connect.')">🔗 Connect Pi Network</button>
+<button class="btn" style="background:linear-gradient(135deg,#059669,#10b981)" onclick="alert('Features: Pi Payments, Marketplace, Rewards, Secure')">📊 Explore Features</button>
+</div>
+<div class="card">
+<h2>🌟 Features</h2>
+<div class="features">
+<div class="feature"><h3>💰 Pi Payments</h3><p>Fast secure transactions</p></div>
+<div class="feature"><h3>🛒 Marketplace</h3><p>Buy sell with Pi</p></div>
+<div class="feature"><h3>📈 Earn Rewards</h3><p>Get rewards</p></div>
+<div class="feature"><h3>🔒 Secure</h3><p>Pi Network security</p></div>
+</div>
+</div>
+<div class="card" style="text-align:center">
+<h3>App URL for Pi Developers Portal</h3>
+<p style="background:#f3f4f6;padding:15px;border-radius:10px;margin:15px 0;font-weight:bold">https://mr786110.github.io</p>
+</div>
+</div>
+<script>Pi.init({version:"2.0",sandbox:false});</script>
 </body>
 </html>
