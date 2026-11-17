@@ -3,106 +3,99 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plentium - Pi Network</title>
-<script src="https://sdk.minepi.com/pi-sdk.js"></script>
+<title>Plentium - Pi Marketplace Saudi Arabia</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:linear-gradient(135deg,#7c3aed,#ec4899);min-height:100vh;color:white}
-.container{max-width:800px;margin:0 auto;padding:20px;text-align:center}
-.logo{font-size:50px;margin:20px 0 10px}
-h1{font-size:32px;margin-bottom:10px}
-p{margin-bottom:15px;line-height:1.6}
-.btn{background:white;color:#7c3aed;padding:14px 30px;border:none;border-radius:30px;font-size:16px;font-weight:bold;cursor:pointer;margin:10px}
-.btn2{background:#ffcc00;color:black;padding:14px 30px;border:none;border-radius:30px;font-size:16px;font-weight:bold;cursor:pointer;margin:10px}
-.card{background:rgba(255,255,255,0.2);padding:20px;border-radius:20px;margin:15px 0;text-align:left}
-.card h3{margin-bottom:8px}
+body{margin:0;font-family:Arial;background:#a855f7;color:white;text-align:center}
+.header{padding:30px 20px 10px}
+.header h1{font-size:32px;margin:10px 0}
+.header p{font-size:16px;line-height:1.5}
+.btn{display:block;margin:15px auto;padding:15px 25px;border-radius:30px;font-size:18px;font-weight:bold;text-decoration:none;width:80%;max-width:320px}
+.white{background:white;color:#7c3aed}
+.yellow{background:#facc15;color:black}
+.box{background:#c084fc;margin:20px;padding:20px;border-radius:20px;text-align:left}
+.box h2{margin:5px 0}
+.box p{margin:5px 0;line-height:1.5}
+.market{background:white;color:black;margin:15px;padding:20px;border-radius:20px}
+.product{background:white;color:black;border:1px solid #ddd;border-radius:15px;padding:20px;margin:15px}
+.product h3{margin:5px 0;font-size:20px}
+.product p{margin:5px 0}
+.price{color:#7c3aed;font-size:22px;font-weight:bold;margin:10px 0}
+.buy{background:#7c3aed;color:white;padding:12px 25px;border-radius:25px;text-decoration:none;display:inline-block;margin:5px;font-weight:bold}
+.wa{background:#25D366;color:white;padding:12px 25px;border-radius:25px;text-decoration:none;display:inline-block;margin:5px;font-weight:bold}
+.footer{padding:20px;font-size:14px}
 </style>
 </head>
 <body>
-<div class="container">
-<div class="logo">🟣</div>
+
+<div class="header">
+<div style="font-size:50px">🟣</div>
 <h1>Welcome to Plentium!</h1>
 <p>Your Trusted Pi Marketplace in Saudi Arabia</p>
 <p>Buy Abaya, Perfume, Watches, Dates and more with Pi Network</p>
-
-<button class="btn" onclick="connectPi()">Connect Pi Network</button>
-<br>
-<button class="btn2" onclick="document.getElementById('shop').scrollIntoView({behavior:'smooth'})">Explore Marketplace 👇</button>
-
-<div class="card">
-<h3>💳 Pi Payments</h3>
-<p>Pay securely using your Pi Wallet. Fast, safe and easy.</p>
+<a class="btn white" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20connect%20with%20Pi">Connect Pi Network</a>
+<a class="btn yellow" href="#market">Explore Marketplace 👇</a>
 </div>
 
-<div class="card">
-<h3>🛍️ Marketplace</h3>
-<p>Shop from trusted sellers across Saudi Arabia.</p>
-</div>
+<div class="box"><h2>💳 Pi Payments</h2><p>Pay securely using your Pi Wallet. Fast, safe and easy.</p></div>
+<div class="box"><h2>🛍️ Marketplace</h2><p>Shop from trusted sellers across Saudi Arabia.</p></div>
 
-<div class="card">
-<h3>🎁 Earn Rewards</h3>
-<p>Earn rewards on every purchase and referral.</p>
-</div>
+<div class="market" id="market">
+<h2>🛍️ Marketplace - Buy with Pi</h2>
 
-<div class="card">
-<h3>🔒 Secure</h3>
-<p>100% Secure Pi transactions with buyer protection.</p>
-</div>
-
-</div>
-
-<div id="shop" style="background:white;color:black;padding:20px;margin:20px;border-radius:20px;">
-<h2 style="text-align:center;">🛍️ Marketplace - Buy with Pi</h2>
-
-<div style="border:1px solid #ddd;padding:15px;border-radius:15px;margin-bottom:15px;text-align:center;">
+<div class="product">
 <h3>🖤 Black Abaya - Saudi Style</h3>
 <p>Premium Quality - Free Delivery in Jeddah</p>
-<h3 style="color:#7c3aed;">5 Pi</h3>
-<button onclick="alert('Please Connect Pi Wallet to Buy')" style="background:#7c3aed;color:white;padding:10px 20px;border:none;border-radius:20px;">Buy with Pi</button>
+<div class="price">5 Pi</div>
+<a class="buy" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20buy%20Black%20Abaya%20-%205%20Pi">Buy with Pi</a><br>
+<a class="wa" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20order%20Black%20Abaya%20-%205%20Pi">📱 WhatsApp Order</a>
 </div>
 
-<div style="border:1px solid #ddd;padding:15px;border-radius:15px;margin-bottom:15px;text-align:center;">
+<div class="product">
 <h3>🌹 Arabic Oud Perfume</h3>
 <p>Original Oud - 100ml - Delivery in KSA</p>
-<h3 style="color:#7c3aed;">3 Pi</h3>
-<button onclick="alert('Please Connect Pi Wallet to Buy')" style="background:#7c3aed;color:white;padding:10px 20px;border:none;border-radius:20px;">Buy with Pi</button>
+<div class="price">3 Pi</div>
+<a class="buy" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20buy%20Arabic%20Oud%20Perfume%20-%203%20Pi">Buy with Pi</a><br>
+<a class="wa" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20order%20Arabic%20Oud%20Perfume%20-%203%20Pi">📱 WhatsApp Order</a>
 </div>
 
-<div style="border:1px solid #ddd;padding:15px;border-radius:15px;margin-bottom:15px;text-align:center;">
+<div class="product">
 <h3>⌚ Smart Watch</h3>
 <p>Latest Model - 1 Year Warranty</p>
-<h3 style="color:#7c3aed;">8 Pi</h3>
-<button onclick="alert('Please Connect Pi Wallet to Buy')" style="background:#7c3aed;color:white;padding:10px 20px;border:none;border-radius:20px;">Buy with Pi</button>
+<div class="price">8 Pi</div>
+<a class="buy" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20buy%20Smart%20Watch%20-%208%20Pi">Buy with Pi</a><br>
+<a class="wa" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20order%20Smart%20Watch%20-%208%20Pi">📱 WhatsApp Order</a>
 </div>
 
-<div style="border:1px solid #ddd;padding:15px;border-radius:15px;margin-bottom:15px;text-align:center;">
+<div class="product">
 <h3>🎧 Wireless Headphones</h3>
 <p>Best Sound - Delivery in KSA</p>
-<h3 style="color:#7c3aed;">4 Pi</h3>
-<button onclick="alert('Please Connect Pi Wallet to Buy')" style="background:#7c3aed;color:white;padding:10px 20px;border:none;border-radius:20px;">Buy with Pi</button>
+<div class="price">4 Pi</div>
+<a class="buy" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20buy%20Wireless%20Headphones%20-%204%20Pi">Buy with Pi</a><br>
+<a class="wa" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20order%20Wireless%20Headphones%20-%204%20Pi">📱 WhatsApp Order</a>
 </div>
 
-<div style="border:1px solid #ddd;padding:15px;border-radius:15px;margin-bottom:15px;text-align:center;">
+<div class="product">
 <h3>👟 Sneakers - White</h3>
 <p>All Sizes Available - Fast Delivery</p>
-<h3 style="color:#7c3aed;">6 Pi</h3>
-<button onclick="alert('Please Connect Pi Wallet to Buy')" style="background:#7c3aed;color:white;padding:10px 20px;border:none;border-radius:20px;">Buy with Pi</button>
+<div class="price">6 Pi</div>
+<a class="buy" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20buy%20Sneakers%20White%20-%206%20Pi">Buy with Pi</a><br>
+<a class="wa" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20order%20Sneakers%20White%20-%206%20Pi">📱 WhatsApp Order</a>
 </div>
 
-<div style="border:1px solid #ddd;padding:15px;border-radius:15px;text-align:center;">
+<div class="product">
 <h3>🌴 Ajwa Dates - 1kg Box</h3>
 <p>Madina Ajwa - Fresh & Premium</p>
-<h3 style="color:#7c3aed;">2 Pi</h3>
-<button onclick="alert('Please Connect Pi Wallet to Buy')" style="background:#7c3aed;color:white;padding:10px 20px;border:none;border-radius:20px;">Buy with Pi</button>
+<div class="price">2 Pi</div>
+<a class="buy" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20buy%20Ajwa%20Dates%201kg%20-%202%20Pi">Buy with Pi</a><br>
+<a class="wa" href="https://wa.me/966595818603?text=Hi%20Plentium!%20I%20want%20to%20order%20Ajwa%20Dates%201kg%20-%202%20Pi">📱 WhatsApp Order</a>
 </div>
 
 </div>
 
-<script>
-function connectPi(){
-  alert('Connecting to Pi Network... Please open in Pi Browser');
-  try{ Pi.init({version:"2.0"}); }catch(e){}
-}
-</script>
+<div class="footer">
+<p>📱 WhatsApp: 0595818603<br>📍 Madina, Saudi Arabia<br>© 2026 Plentium - All Rights Reserved</p>
+<p><a style="color:white" href="https://wa.me/966595818603">Chat on WhatsApp</a></p>
+</div>
+
 </body>
 </html>
